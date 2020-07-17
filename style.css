@@ -40,6 +40,7 @@ main {
   display: flex;
   max-height: 90vh;
   overflow: hidden;
+  justify-content: center;
 }
 
 .container {
@@ -89,9 +90,9 @@ main {
 
 .button-section {
   padding-top: 2rem;
-  width: 35%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .button-section a {
@@ -100,6 +101,7 @@ main {
   padding: 0.2rem 1rem;
   border: 2px solid white;
   white-space: nowrap;
+  margin-left: 2rem;
 }
 
 .button-section #red {
@@ -112,5 +114,17 @@ main {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1680px) {
+  .leaf {
+    z-index: 0;
+  }
+  .container {
+    z-index: -2;
+  }
+  .button-section {
+    z-index: 1;
   }
 }

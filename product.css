@@ -54,6 +54,10 @@ main {
   align-items: center;
 }
 
+.btn-container .back {
+  white-space: nowrap;
+}
+
 .product {
   animation: product-landing 0.8s ease-in-out;
 }
