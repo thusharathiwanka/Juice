@@ -66,7 +66,11 @@ main {
   right: 0;
   pointer-events: none;
   animation: leaf-shake 2s ease-in-out infinite alternate-reverse;
-  transform-origin: right;
+  transform-origin: bottom;
+}
+
+.menu {
+  cursor: pointer;
 }
 
 .container h1 {
@@ -95,6 +99,7 @@ main {
   font-size: 1.2rem;
   padding: 0.2rem 1rem;
   border: 2px solid white;
+  white-space: nowrap;
 }
 
 .button-section #red {
@@ -107,14 +112,5 @@ main {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes leaf-shake {
-  from {
-    transform: rotateZ(2deg);
-  }
-  to {
-    transform: rotateZ(0);
   }
 }

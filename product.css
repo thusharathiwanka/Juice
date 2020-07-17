@@ -1,0 +1,70 @@
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-content h1 {
+  color: #eca64d;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.text-content .description {
+  font-size: 1.5rem;
+  color: #757575;
+  width: 65%;
+  padding: 6rem 0 3rem 0;
+}
+
+.text-content .contains {
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.btn-container {
+  padding-top: 5rem;
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content a {
+  color: #757575;
+  font-size: 1.5rem;
+}
+
+.text-content .red {
+  color: #e74430;
+}
+
+.text-content .green {
+  color: #63a159;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  animation: product-landing 0.8s ease-in-out;
+}
+
+@keyframes product-landing {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
