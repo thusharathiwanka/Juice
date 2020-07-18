@@ -101,7 +101,7 @@ main {
   padding: 0.2rem 1rem;
   border: 2px solid white;
   white-space: nowrap;
-  margin-left: 2rem;
+  margin: 0 1rem;
 }
 
 .button-section #red {
@@ -119,12 +119,92 @@ main {
 
 @media (max-width: 1680px) {
   .leaf {
-    z-index: 0;
+    width: 60%;
+    right: -7%;
   }
-  .container {
-    z-index: -2;
-  }
-  .button-section {
+  nav ul {
     z-index: 1;
+  }
+}
+
+@media (max-width: 930px) {
+  .container h1 {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .container h1 {
+    font-size: 8rem;
+    padding: 1rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  .container a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .container a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .button-section {
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .button-section #red {
+    padding: 0.2rem 1.75rem;
+  }
+
+  .button-section #green {
+    padding: 0.2rem 1.2rem;
+  }
+
+  .menu {
+    width: 80%;
+  }
+
+  .leaf {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 6rem;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 80%;
   }
 }

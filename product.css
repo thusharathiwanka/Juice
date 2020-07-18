@@ -1,18 +1,29 @@
+body {
+  overflow: visible;
+}
+
 main {
   width: 80%;
   margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  overflow: visible;
 }
 
 .text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 30rem;
 }
 
 .text-content h1 {
   color: #eca64d;
   font-size: 4rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .text-content .description {
@@ -30,8 +41,8 @@ main {
 .btn-container {
   padding-top: 5rem;
   display: flex;
-  width: 25%;
-  justify-content: space-between;
+  width: 35%;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -49,16 +60,26 @@ main {
 }
 
 .img-container {
+  flex: 1 1 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 4rem;
 }
 
 .btn-container .back {
   white-space: nowrap;
 }
 
+.btn-container .back-img {
+  padding: 1rem;
+  min-width: 35%;
+  height: auto;
+}
+
 .product {
+  width: 100%;
   animation: product-landing 0.8s ease-in-out;
 }
 
@@ -70,5 +91,42 @@ main {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .text-content {
+    padding: 4rem 0;
+    align-items: center;
+  }
+
+  .text-content p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .text-content h1 {
+    font-size: 3rem;
+  }
+
+  .text-content .description {
+    font-size: 1.2rem;
+  }
+
+  .text-content .contains {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .btn-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .text-content h1 {
+    font-size: 2.5rem;
   }
 }
